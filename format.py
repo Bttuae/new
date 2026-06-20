@@ -17,4 +17,4 @@ def format_html_file(input_file, output_file):
     print(f"Successfully formatted and saved to {output_file}")
 
 # Example usage:
-format_html_file('index.html', 'beautiful.html')
+format_html_file('index_old.html', 'index.html')
