@@ -5924,6 +5924,7 @@ blockquote {
     font-size: 14vw;
     font-weight: 400;
     line-height: 100%;
+    white-space: nowrap;
   }
 
   .marqueelogos-2 {
