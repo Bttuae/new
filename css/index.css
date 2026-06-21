@@ -5082,7 +5082,7 @@ blockquote {
   aspect-ratio: 16 / 9;
   border: 0px none var(--border);
   object-fit: fill;
-  background-image: url("/images/contact.jpg");
+  background-image: url("../images/contact.jpg");
   background-position: 0 0;
   background-size: cover;
   border-radius: 0;
