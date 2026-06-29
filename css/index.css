@@ -8806,8 +8806,9 @@ blockquote {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 80px;
+  gap: 100px;
   width: 100%;
+  padding: 30px 0;
 }
 
 .contact-left,
@@ -8815,58 +8816,98 @@ blockquote {
   flex: 1;
 }
 
+/* Left Side */
+.contact-title {
+  font-size: 52px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  margin-bottom: 35px;
+  color: #fff;
+}
+
+.contact-block {
+  margin-bottom: 32px;
+}
+
+.contact-block h4 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.contact-block p {
+  font-size: 19px;
+  line-height: 1.8;
+  color: rgba(255,255,255,0.82);
+  font-weight: 400;
+}
+
+.contact-block a {
+  color: rgba(255,255,255,0.82);
+  text-decoration: none;
+  transition: color .3s ease;
+}
+
+.contact-block a:hover {
+  color: #ffffff;
+}
+
+/* Right Side */
 .contact-right {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+/* QR Card */
+.qr-box {
+  background: #ffffff;
+  padding: 11px;
+  border-radius: 16px;
+  margin-bottom: 30px;
+  box-shadow: 0 15px 40px rgba(0,0,0,.25);
+}
+
 .qr-image {
-  width: 120px;
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 30px;
+  display: block;
+  width: 110px;
+  height: 110px;
+  /* object-fit: contain; */
 }
 
-.contact-title {
-  font-size: 58px;
-  margin-bottom: 25px;
+/* Contact text below QR */
+.contact-right .contact-block {
+  text-align: center;
 }
 
-.contact-block {
-  margin-bottom: 30px;
+.contact-right .contact-block h3 {
+  font-size: 30px;
 }
 
-.contact-block h3 {
-  font-size: 34px;
-  margin-bottom: 10px;
+.contact-right .contact-block p {
+  font-size: 20px;
+  line-height: 1.8;
 }
 
-.contact-block p {
-  font-size: 24px;
-  line-height: 1.6;
-}
+/* Mobile */
+@media (max-width:768px){
 
-.contact-block a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.contact-block a:hover {
-  text-decoration: underline;
-}
-
-@media (max-width: 768px) {
-  .contactwrapper {
-      flex-direction: column;
-      gap: 40px;
+  .contactwrapper{
+      flex-direction:column;
+      gap:50px;
   }
 
-  .contact-right {
-      align-items: flex-start;
+  .contact-right{
+      align-items:flex-start;
   }
 
-  .qr-image {
-      width: 260px;
+  .contact-right .contact-block{
+      text-align:left;
+  }
+
+  .qr-image{
+      width:170px;
+      height:170px;
   }
 }
