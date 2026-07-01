@@ -9063,3 +9063,101 @@ blockquote {
   margin-top: 50px;
   font-weight: 700;
 }
+
+/* ==========================
+   Infinite Image Carousel
+========================== */
+
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  background: #000;
+  padding: 40px 0;
+  position: relative;
+}
+
+.track {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  width: max-content;
+  will-change: transform;
+}
+
+.track img {
+  width: 310px;
+  height: 470px;
+  object-fit: cover;
+  border-radius: 18px;
+  flex: 0 0 auto;
+  display: block;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* Large Screens */
+@media (min-width: 1600px) {
+  .track img {
+      width: 340px;
+      height: 510px;
+  }
+}
+
+/* Laptop */
+@media (max-width: 1200px) {
+  .track {
+      gap: 18px;
+  }
+
+  .track img {
+      width: 280px;
+      height: 420px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .carousel {
+      padding: 30px 0;
+  }
+
+  .track {
+      gap: 16px;
+  }
+
+  .track img {
+      width: 230px;
+      height: 345px;
+      border-radius: 15px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .carousel {
+      padding: 20px 0;
+  }
+
+  .track {
+      gap: 12px;
+  }
+
+  .track img {
+      width: 170px;
+      height: 255px;
+      border-radius: 12px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .track {
+      gap: 10px;
+  }
+
+  .track img {
+      width: 145px;
+      height: 220px;
+      border-radius: 10px;
+  }
+}
