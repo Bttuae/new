@@ -1566,6 +1566,7 @@ textarea.w-input, textarea.w-select {
   padding: 2vh 1vh;
   display: inline-block;
   -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 .w-lightbox-active {
