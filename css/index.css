@@ -9340,3 +9340,10 @@ background-repeat: no-repeat;
 .heading1, .heading2 {
   font-family: "MyFont", "Times New Roman", serif;
 }
+@media (max-width: 767px) {
+  .herosite {
+    background-size: 100% auto;  /* Forces width to be 100%, height auto scales */
+    background-position: top center;
+    min-height: auto;            /* Optional: adjusts container height if it looks too empty at the bottom */
+  }
+}
