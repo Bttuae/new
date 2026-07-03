@@ -5202,11 +5202,11 @@ blockquote {
   overflow: visible;
 }
 
-.heading2 {
+/* .heading2 {
   font-family: "Basementgrotesque V 1", Arial, sans-serif;
   font-weight: 500;
   display: block;
-}
+} */
 
 .rich-text-block, .rich-text-block-2 {
   grid-column-gap: 24px;
@@ -5428,7 +5428,7 @@ blockquote {
   display: flex;
 }
 
-.herotitle {
+/* .herotitle {
   z-index: 2;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
@@ -5450,6 +5450,15 @@ blockquote {
   position: static;
   inset: auto;
   overflow: visible;
+} */
+
+.herotitle{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  width:100%;
 }
 
 .blurelipse {
@@ -5519,9 +5528,9 @@ blockquote {
   font-size: 14px;
 }
 
-.heading1 {
+/* .heading1 { */
   /* background-image: radial-gradient(circle farthest-corner at 50% 50%, var(--green), #a7a7a7de), url("https://cdn.prod.website-files.com/696959e4ed1e5a9d6799a34f/69fc9fcefa14594913f103b5_ChatGPT%20Image%205%20may%202026%2C%2016_41_02.png"); */
-  background-image: radial-gradient(circle farthest-corner at 50% 50%, var(--green), #a7a7a7de),
+  /* background-image: radial-gradient(circle farthest-corner at 50% 50%, var(--green), #a7a7a7de),
   url("../images/bg.png");
   opacity: 1;
   filter: drop-shadow(2px 2px 6px #5e5e5e70);
@@ -5547,6 +5556,34 @@ blockquote {
   line-height: 100%;
   display: block;
   overflow: visible;
+} */
+.heading1{
+  background-image:
+      radial-gradient(circle farthest-corner at 50% 50%, var(--green), #a7a7a7de),
+      url("../images/bg.png");
+  background-clip:text;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+
+  filter:drop-shadow(2px 2px 6px #5e5e5e70);
+
+  font-weight:400;
+  line-height:0.95;
+
+  /* Responsive font */
+  font-size:clamp(4rem, 12vw, 13rem);
+
+  /* Keep BEST TEAM on one line */
+  white-space:nowrap;
+
+  margin:0;
+}
+
+.heading2{
+  font-size:clamp(2.5rem, 5vw, 5.5rem);
+  font-weight:700;
+  line-height:1;
+  margin-top:10px;
 }
 
 .logoentities {
