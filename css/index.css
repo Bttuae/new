@@ -5324,7 +5324,8 @@ blockquote {
   background-image: url("../images/bg.png");
   /* background-position: 50%;
   background-size: cover; */
-  background-position: center top;
+  /* background-position: center top; */
+  background-size: 100% auto;
 background-size: cover;
 background-repeat: no-repeat;
 
