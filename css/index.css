@@ -5323,7 +5323,10 @@ blockquote {
   /* background-image: url("https://cdn.prod.website-files.com/696959e4ed1e5a9d6799a34f/69fc9fcefa14594913f103b5_ChatGPT%20Image%205%20may%202026%2C%2016_41_02.png"); */
   background-image: url("../images/bg.png");
   background-position: 50%;
-  background-size: cover;
+  /* background-size: cover; */
+  background-size: 100% auto;
+background-position: top center;
+background-repeat: no-repeat;
   flex-flow: column;
   grid-template-rows: auto;
   grid-template-columns: 1.5fr 1fr;
@@ -9306,4 +9309,31 @@ blockquote {
     width: 140px;
     height: 130px;
   }
+}
+/* Core Heading Styles using Cinzel */
+.heading1 {
+  font-family: "Cinzel", "Times New Roman", serif;
+  font-weight: 400; /* Best match for the elegant look in the screenshot */
+  letter-spacing: 2px; /* Adds the premium, spacious feel from the mockup */
+}
+
+.heading2 {
+  font-family: "Cinzel", "Times New Roman", serif;
+  font-weight: 700; /* Bold variant for subheadings or secondary emphasis */
+  letter-spacing: 1px;
+}
+
+/* 
+   If "MyFont" was your custom local asset for the serif font, 
+   uncomment this section and make sure the file path is correct.
+*/
+
+@font-face {
+  font-family: "MyFont";
+  src: url("../fonts/MyFont.woff2") format("woff2");
+  font-display: swap;
+}
+
+.heading1, .heading2 {
+  font-family: "MyFont", "Times New Roman", serif;
 }
