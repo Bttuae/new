@@ -5203,15 +5203,10 @@ blockquote {
 }
 
 .heading2 {
-  color: #fff;
-  font-size: clamp(2rem, 5vw, 5rem);
-  font-weight: 700;
-}
-/* .heading2 {
   font-family: "Basementgrotesque V 1", Arial, sans-serif;
   font-weight: 500;
   display: block;
-} */
+}
 
 .rich-text-block, .rich-text-block-2 {
   grid-column-gap: 24px;
@@ -5434,19 +5429,6 @@ blockquote {
 }
 
 .herotitle {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: baseline;
-  gap: 0.2em;
-  text-align: center;
-  line-height: 1;
-  margin: 0 auto;
-  width: 100%;
-  padding: 0 20px;
-}
-
-/* .herotitle {
   z-index: 2;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
@@ -5468,7 +5450,7 @@ blockquote {
   position: static;
   inset: auto;
   overflow: visible;
-} */
+}
 
 .blurelipse {
   z-index: 1;
@@ -5537,9 +5519,9 @@ blockquote {
   font-size: 14px;
 }
 
-/* .heading1 { */
+.heading1 {
   /* background-image: radial-gradient(circle farthest-corner at 50% 50%, var(--green), #a7a7a7de), url("https://cdn.prod.website-files.com/696959e4ed1e5a9d6799a34f/69fc9fcefa14594913f103b5_ChatGPT%20Image%205%20may%202026%2C%2016_41_02.png"); */
-  /* background-image: radial-gradient(circle farthest-corner at 50% 50%, var(--green), #a7a7a7de),
+  background-image: radial-gradient(circle farthest-corner at 50% 50%, var(--green), #a7a7a7de),
   url("../images/bg.png");
   opacity: 1;
   filter: drop-shadow(2px 2px 6px #5e5e5e70);
@@ -5565,19 +5547,6 @@ blockquote {
   line-height: 100%;
   display: block;
   overflow: visible;
-} */
-
-.heading1 {
-  background-image:
-      radial-gradient(circle farthest-corner at 50% 50%, var(--green), #a7a7a7de),
-      url("../images/bg.png");
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  filter: drop-shadow(2px 2px 6px #5e5e5e70);
-
-  font-size: clamp(3rem, 11vw, 11rem);
-  font-weight: 400;
 }
 
 .logoentities {
