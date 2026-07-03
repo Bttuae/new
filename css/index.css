@@ -5314,20 +5314,19 @@ blockquote {
   position: relative;
 }
 
-.herosite {
+/* .herosite {
   z-index: 1;
   grid-column-gap: 1px;
   grid-row-gap: 1px;
   mix-blend-mode: normal;
   background-color: #0000;
   /* background-image: url("https://cdn.prod.website-files.com/696959e4ed1e5a9d6799a34f/69fc9fcefa14594913f103b5_ChatGPT%20Image%205%20may%202026%2C%2016_41_02.png"); */
-  background-image: url("../images/bg.png");
+  /* background-image: url("../images/bg.png");  */
    /* background-position: 50%; */
   /* .background-size: cover;  */
   /* background-position: center top; */
-  background-size: 100% auto;
+  /* background-size: 100% auto;
   background-position: top ;
-/* background-size: cover; */
 background-repeat: no-repeat;
 
   flex-flow: column;
@@ -5342,6 +5341,7 @@ background-repeat: no-repeat;
   display: flex;
   position: relative;
 }
+  
 
 .generalcontainersite {
   z-index: 5;
@@ -5349,8 +5349,37 @@ background-repeat: no-repeat;
   position: static;
   top: 0;
   overflow: hidden;
-}
+} */
 
+
+
+.herosite {
+  z-index: 1;
+  background-color: #0000;
+  background-image: url("../images/bg.png");
+  background-size: cover; /* Keeps it covered on desktop too */
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .herosite {
+    /* 'cover' ensures the image stretches to fill both the width AND height of the container */
+    background-size: cover;  
+    
+    /* Center centers the focal point, or use 'top center' if the top of the image is important */
+    background-position: center center; 
+    
+    /* Ensures the container adapts to the mobile content height */
+    min-height: 100vh; 
+  }
+}
 .button-10 {
   grid-column-gap: 1rem;
   grid-row-gap: 1rem;
@@ -9340,12 +9369,3 @@ background-repeat: no-repeat;
 .heading1, .heading2 {
   font-family: "MyFont", "Times New Roman", serif;
 }
-@media (max-width: 767px) {
-  .herosite {
-    background-size: 100% auto;  /* Forces width to be 100%, height auto scales */
-    background-position: top center;
-    min-height: auto;            /* Optional: adjusts container height if it looks too empty at the bottom */
-  }
-}
-
-
