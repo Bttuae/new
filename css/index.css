@@ -5582,12 +5582,12 @@ background-repeat: no-repeat;
   margin:0;
 }
 
-.heading2{
+/* .heading2{
   font-size:clamp(2.5rem, 5vw, 5.5rem);
   font-weight:700;
   line-height:1;
   margin-top:10px;
-}
+} */
 
 .logoentities {
   color: #fff;
