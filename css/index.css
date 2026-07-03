@@ -5374,7 +5374,7 @@ background-repeat: no-repeat;
     background-size: cover;  
     
     /* Center centers the focal point, or use 'top center' if the top of the image is important */
-    background-position: center center; 
+    background-position: right top; 
     
     /* Ensures the container adapts to the mobile content height */
     min-height: 100vh; 
