@@ -5326,6 +5326,7 @@ blockquote {
   background-size: cover; */
   /* background-position: center top; */
   background-size: 100% auto;
+  background-position: top center;
 background-size: cover;
 background-repeat: no-repeat;
 
