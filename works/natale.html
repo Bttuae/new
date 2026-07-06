@@ -201,22 +201,24 @@
   class="image"
   style="width: 90vw; height: auto; display: block; margin: 0; max-width: none;"
 >
+<div id="catalog"></div>
 
-<img
-loading="lazy"
-src="/images/sport_equipment/page_10.png"
-alt="Image Work"
-class="image"
-style="width: 95vw; height: auto; display: block; margin: 0; max-width: none;"
->
+<script>
+const catalog = document.getElementById("catalog");
 
-<img
-loading="lazy"
-src="/images/sport_equipment/page_11.png"
-alt="Image Work"
-class="image"
-style="width: 100vw; height: auto; display: block; margin: 0; max-width: none;"
->
+for (let i = 9; i <= 222; i++) {
+    const img = document.createElement("img");
+    img.src = `/images/sport_equipment/page_${i}.png`;
+    img.loading = "lazy";
+    img.alt = `Page ${i}`;
+    img.style.width = "100%";
+    img.style.height = "auto";
+    img.style.display = "block";
+
+    catalog.appendChild(img);
+}
+</script>
+
 
 
 </section>
