@@ -9343,7 +9343,7 @@ background-repeat: no-repeat;
   }
 }
 /* Core Heading Styles using Cinzel */
-.heading1 {
+/* .heading1 {
   font-family: "Archivo Black", sans-serif;
   font-weight: 900;
   letter-spacing: 2px;
@@ -9360,6 +9360,24 @@ background-repeat: no-repeat;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
+} */
+
+.heading1 {
+  font-family: "PrimeTime", sans-serif;
+  letter-spacing: 2px;
+
+  background: linear-gradient(
+      90deg,
+      #c8ff4d,
+      #7cf59b,
+      #4feeff,
+      #35c8ff
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
 .heading2 {
@@ -9367,4 +9385,10 @@ background-repeat: no-repeat;
   font-weight: 900;
   letter-spacing: 1px;
   color: #fff; /* Keep as it is */
+}
+
+@font-face {
+  font-family: "PrimeTime";
+  src: url("../fonts/PrimeTime.ttf") format("truetype");
+  font-display: swap;
 }
