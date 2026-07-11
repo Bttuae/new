@@ -9366,6 +9366,9 @@ background-repeat: no-repeat;
   font-display: swap;
 }
 
-.heading1, .heading2 {
+/* .heading1, .heading2 {
   font-family: "MyFont", "Times New Roman", serif;
+} */
+.heading1, .heading2 {
+  font-family: "Archivo Black", sans-serif;
 }
