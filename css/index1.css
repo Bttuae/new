@@ -9343,32 +9343,28 @@ background-repeat: no-repeat;
   }
 }
 /* Core Heading Styles using Cinzel */
-.heading1 {
-  font-family: "Cinzel", "Times New Roman", serif;
-  font-weight: 400; /* Best match for the elegant look in the screenshot */
-  letter-spacing: 2px; /* Adds the premium, spacious feel from the mockup */
-}
-
+.heading1,
 .heading2 {
-  font-family: "Cinzel", "Times New Roman", serif;
-  font-weight: 700; /* Bold variant for subheadings or secondary emphasis */
-  letter-spacing: 1px;
-}
-
-/* 
-   If "MyFont" was your custom local asset for the serif font, 
-   uncomment this section and make sure the file path is correct.
-*/
-
-@font-face {
-  font-family: "MyFont";
-  src: url("../fonts/MyFont.woff2") format("woff2");
-  font-display: swap;
-}
-
-/* .heading1, .heading2 {
-  font-family: "MyFont", "Times New Roman", serif;
-} */
-.heading1, .heading2 {
   font-family: "Archivo Black", sans-serif;
+  font-weight: 900;
+
+  /* Gradient */
+  background: linear-gradient(
+    90deg,
+    #c8ff4d 0%,
+    #79f59c 35%,
+    #4deeff 70%,
+    #35c8ff 100%
+  );
+
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Clip gradient to text */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Firefox */
+  background-clip: text;
+  color: transparent;
 }
