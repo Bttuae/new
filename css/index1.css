@@ -9392,3 +9392,7 @@ background-repeat: no-repeat;
   src: url("../fonts/PrimeTime.ttf") format("truetype");
   font-display: swap;
 }
+
+* {
+  font-family: "PRIMETIME", sans-serif !important;
+}
