@@ -9397,21 +9397,55 @@ background-repeat: no-repeat;
   font-family: "PRIMETIME", sans-serif !important;
 } */
 
+/* ===== HEADINGS ===== */
 .hero-title,
 .herotitle,
 .heading1,
 .heading2,
 h1,
 h2,
-h3 {
-    font-family: "PrimeTime", sans-serif;
+h3,
+h4,
+h5,
+h6 {
+    font-family: "PrimeTime", sans-serif !important;
 }
 
+/* ===== EVERYTHING ELSE ===== */
+html,
 body,
+body *,
 p,
 span,
 a,
 button,
-.number {
-    font-family: "Archivo Black", sans-serif;
+input,
+textarea,
+select,
+label,
+li,
+ul,
+ol,
+td,
+th,
+small,
+strong,
+em,
+blockquote,
+figcaption {
+    font-family: "Archivo Black", sans-serif !important;
+}
+
+/* Keep headings in PrimeTime */
+h1 *,
+h2 *,
+h3 *,
+h4 *,
+h5 *,
+h6 *,
+.hero-title *,
+.herotitle *,
+.heading1 *,
+.heading2 * {
+    font-family: "PrimeTime", sans-serif !important;
 }
