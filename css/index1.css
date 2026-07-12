@@ -9397,15 +9397,21 @@ background-repeat: no-repeat;
   font-family: "PRIMETIME", sans-serif !important;
 } */
 
+.hero-title,
+.herotitle,
+.heading1,
+.heading2,
 h1,
 h2,
-h3,
-.hero-title,
-.section-title,
-.logo-text {
+h3 {
     font-family: "PrimeTime", sans-serif;
 }
 
-body {
-    font-family: "Archivo Black", Helvetica, sans-serif;
+body,
+p,
+span,
+a,
+button,
+.number {
+    font-family: "Archivo Black", sans-serif;
 }
