@@ -9393,6 +9393,19 @@ background-repeat: no-repeat;
   font-display: swap;
 }
 
-* {
+/* * {
   font-family: "PRIMETIME", sans-serif !important;
+} */
+
+h1,
+h2,
+h3,
+.hero-title,
+.section-title,
+.logo-text {
+    font-family: "PRIMETIME", sans-serif;
+}
+
+body {
+    font-family: "Archivo Black", Helvetica, sans-serif;
 }
