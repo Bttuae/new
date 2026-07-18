@@ -203,6 +203,24 @@
 >
 <div id="catalog"></div>
 
+
+
+<script>
+  const catalog1 = document.getElementById("catalog");
+  
+  for (let i = 1; i <= 7; i++) {
+      const img = document.createElement("img");
+      img.src = `/images/sport_equipment1/${i}.png`;
+      img.loading = "lazy";
+      img.alt = `Page ${i}`;
+      img.style.width = "100%";
+      img.style.height = "auto";
+      img.style.display = "block";
+  
+      catalog.appendChild(img);
+  }
+  </script>
+
 <script>
 const catalog = document.getElementById("catalog");
 
