@@ -56,24 +56,19 @@
   
   <script>
     const catalog = document.getElementById("catalog");
-  
+    
     for (let i = 1; i <= 4; i++) {
-      const img = document.createElement("img");
-  
-      img.src = '../images/uniform/${i}.png';
-      img.loading = "lazy";
-      img.alt = `Image ${i}`;
-  
-      img.style.width = "90vw";
-      img.style.height = "auto";
-      img.style.display = "block";
-      img.style.margin = "0";
-      img.style.maxWidth = "none";
-  
-      catalog.appendChild(img);
+        const img = document.createElement("img");
+        img.src = `/images/uniform/${i}.png`;
+        img.loading = "lazy";
+        img.alt = `Page ${i}`;
+        img.style.width = "100%";
+        img.style.height = "auto";
+        img.style.display = "block";
+    
+        catalog.appendChild(img);
     }
-  </script>
-  
+    </script>
   
   
   </section>
