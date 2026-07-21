@@ -57,7 +57,9 @@
     for (let i = 1; i <= 11; i++) {
       const img = document.createElement("img");
   
-      img.src = `../imgSkin/${i}.jpg`;   // Match your image path and extension
+      // img.src = `../imgSkin/${i}.jpg`; 
+      img.src = '../images/imgSkin/page_${i}.png'
+        // Match your image path and extension
       img.loading = "lazy";
       img.alt = `Image ${i}`;
   
