@@ -53,26 +53,21 @@
   
   <script>
     const catalog = document.getElementById("catalog");
-  
-    for (let i = 1; i <= 11; i++) {
-      const img = document.createElement("img");
-  
-      // img.src = `../imgSkin/${i}.jpg`; 
-      img.src = '../images/imgSkin/page_${i}.png'
-        // Match your image path and extension
-      img.loading = "lazy";
-      img.alt = `Image ${i}`;
-  
-      img.style.width = "90vw";
-      img.style.height = "auto";
-      img.style.display = "block";
-      img.style.margin = "0";
-      img.style.maxWidth = "none";
-  
-      catalog.appendChild(img);
+    
+    for (let i = 1; i <= 60; i++) {
+    
+    
+        const img = document.createElement("img");
+        img.src = `/images/imgSkin/page_${i}.png`;
+        img.loading = "lazy";
+        img.alt = `Page ${i}`;
+        img.style.width = "100%";
+        img.style.height = "auto";
+        img.style.display = "block";
+    
+        catalog.appendChild(img);
     }
-  </script>
-  
+    </script>
   
   
   </section>
