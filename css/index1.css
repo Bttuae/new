@@ -5606,7 +5606,7 @@ background-repeat: no-repeat;
   line-height:0.95;
 
   /* Responsive font */
-  font-size:clamp(4rem, 12vw, 13rem);
+  font-size:clamp(2.5rem, 8vw, 8rem);
 
   /* Keep BEST TEAM on one line */
   white-space:nowrap;
