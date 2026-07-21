@@ -62,8 +62,11 @@
         img.loading = "lazy";
         img.alt = `Page ${i}`;
         img.style.width = "100%";
-        img.style.height = "70%";
+        img.style.maxWidth = "700px";
+        img.style.height = "auto";
         img.style.display = "block";
+        img.style.margin = "20px auto";
+        img.style.objectFit = "contain";
     
         catalog.appendChild(img);
     }
