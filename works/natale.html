@@ -222,9 +222,16 @@ style="width: 90vw; height: auto; display: block; margin: 0; max-width: none;"
       img.src = `/images/sport_equipment/page_${i}.png`;
       img.loading = "lazy";
       img.alt = `Page ${i}`;
+      // img.style.width = "100%";
+      // img.style.height = "auto";
+      // img.style.display = "block";
+
       img.style.width = "100%";
-      img.style.height = "auto";
-      img.style.display = "block";
+        img.style.maxWidth = "700px";
+        img.style.height = "auto";
+        img.style.display = "block";
+        img.style.margin = "20px auto";
+        img.style.objectFit = "contain";
   
       catalog.appendChild(img);
   }
