@@ -210,6 +210,27 @@ style="width: 90vw; height: auto; display: block; margin: 0; max-width: none;"
 <div id="catalog"></div>
 
 <script>
+  const catalog = document.getElementById("catalog");
+  
+  for (let i = 1; i <= 222; i++) {
+      // Skip these images
+      if (i === 148 || i === 149 || i === 150 || i==151) {
+          continue;
+      }
+  
+      const img = document.createElement("img");
+      img.src = `/images/sport_equipment/page_${i}.png`;
+      img.loading = "lazy";
+      img.alt = `Page ${i}`;
+      img.style.width = "100%";
+      img.style.height = "auto";
+      img.style.display = "block";
+  
+      catalog.appendChild(img);
+  }
+  </script>
+
+<!-- <script>
 const catalog = document.getElementById("catalog");
 
 for (let i = 1; i <= 222; i++) {
@@ -223,7 +244,7 @@ for (let i = 1; i <= 222; i++) {
 
     catalog.appendChild(img);
 }
-</script>
+</script> -->
 
 
 
