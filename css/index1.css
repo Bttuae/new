@@ -9454,3 +9454,90 @@ h6 *,
 .heading2 * {
     font-family: "PrimeTime", sans-serif !important;
 }
+
+/* =========================
+   TRUSTED CLIENTS SECTION
+========================= */
+
+.clients-section {
+  width: 100%;
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+/* Title */
+.clients-title {
+  text-align: center;
+  font-size: clamp(2.5rem, 5vw, 5rem);
+  font-weight: 800;
+  margin-bottom: 50px;
+  letter-spacing: -1px;
+}
+
+/* Carousel */
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+/* Moving track */
+.track {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Individual image frame */
+.client-card {
+  flex: 0 0 240px;
+  height: 160px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+
+  box-sizing: border-box;
+  overflow: hidden;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Images fit inside frame */
+.client-card img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+  object-position: center;
+
+  display: block;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .clients-section {
+    padding: 55px 0;
+  }
+
+  .clients-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+
+  .track {
+    gap: 18px;
+  }
+
+  .client-card {
+    flex: 0 0 180px;
+    height: 120px;
+    padding: 15px;
+    border-radius: 12px;
+  }
+}
