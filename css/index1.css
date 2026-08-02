@@ -9454,3 +9454,22 @@ h6 *,
 .heading2 * {
     font-family: "PrimeTime", sans-serif !important;
 }
+
+/* Container/Track adjustments */
+.carousel {
+  overflow: hidden; /* Prevents oversized content from spilling out */
+  width: 100%;       /* Adjust to your carousel frame width */
+}
+
+.track {
+  display: flex;
+  align-items: center; /* Aligns images vertically in the middle */
+}
+
+/* Image sizing rules */
+.carousel img {
+  width: 100%;             /* Scales to fit frame width */
+  height: 200px;           /* Set your desired fixed carousel height */
+  object-fit: contain;     /* Fits entire image inside without cropping */
+  flex-shrink: 0;          /* Prevents images from squeezing if using flex */
+}
