@@ -5372,7 +5372,7 @@ background-repeat: no-repeat;
   .herosite {
     /* 'cover' ensures the image stretches to fill both the width AND height of the container */
     background-size: cover;  
-    
+    background-image: url("../images/bg-mob.webp");
     /* Center centers the focal point, or use 'top center' if the top of the image is important */
     background-position: 9% top; 
     
@@ -5592,26 +5592,38 @@ background-repeat: no-repeat;
   display: block;
   overflow: visible;
 } */
-.heading1{
+.heading1 {
+  /* Default background image for all screen sizes */
   background-image:
-      radial-gradient(circle farthest-corner at 50% 50%, #2e8b57, #a7a7a7de),
-      url("../images/bg.webp");
-  background-clip:text;
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
+    radial-gradient(circle farthest-corner at 50% 50%, #2e8b57, #a7a7a7de),
+    url("../images/bg.webp");
 
-  filter:drop-shadow(2px 2px 6px #5e5e5e70);
+  /* Other shared styles for both desktop and mobile */
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 
-  font-weight:400;
-  line-height:0.95;
+  filter: drop-shadow(2px 2px 6px #5e5e5e70);
+
+  font-weight: 400;
+  line-height: 0.95;
 
   /* Responsive font */
-  font-size:clamp(3.5rem, 10vw, 12rem);
+  font-size: clamp(3.5rem, 10vw, 12rem);
 
   /* Keep BEST TEAM on one line */
-  white-space:nowrap;
+  white-space: nowrap;
 
-  margin:0;
+  margin: 0;
+}
+
+/* Specific background image for mobile devices with max-width 767px */
+@media (max-width: 767px) {
+  .heading1 {
+    background-image:
+      radial-gradient(circle farthest-corner at 50% 50%, #2e8b57, #a7a7a7de),
+      url("../images/bg-mob.webp"); /* Use the mobile-specific background image */
+  }
 }
 
 .herotitle .heading1 {
