@@ -5595,7 +5595,7 @@ background-repeat: no-repeat;
 .heading1{
   background-image:
       radial-gradient(circle farthest-corner at 50% 50%, #2e8b57, #a7a7a7de),
-      url("../images/bg.png");
+      url("../images/bg.webp");
   background-clip:text;
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
