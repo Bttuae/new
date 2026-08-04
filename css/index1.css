@@ -5356,7 +5356,7 @@ background-repeat: no-repeat;
 .herosite {
   z-index: 1;
   background-color: #0000;
-  background-image: url("../images/bg.png");
+  background-image: url("../images/bg.webp");
   background-size: cover; /* Keeps it covered on desktop too */
   background-position: center;
   background-repeat: no-repeat;
