@@ -214,12 +214,12 @@ style="width: 90vw; height: auto; display: block; margin: 0; max-width: none;"
   
   for (let i = 1; i <= 222; i++) {
       // Skip these images
-      if (i === 148 || i === 149 || i === 150 || i==151) {
-          continue;
-      }
+      // if (i === 148 || i === 149 || i === 150 || i==151) {
+      //     continue;
+      // }
   
       const img = document.createElement("img");
-      img.src = `/images/sport_equipment/page_${i}.webp`;
+      img.src = `/images/sport_equipment/Page_${i}.webp`;
       img.loading = "lazy";
       img.decoding = "async";
       img.alt = `Page ${i}`;
